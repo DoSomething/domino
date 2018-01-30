@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var configure = require('@dosomething/webpack-config');
 const path = require('path');
 
@@ -9,6 +10,10 @@ module.exports = configure({
 
     output: {
         filename: '[name].js',
-        path: path.join(__dirname, 'dist'),
-    }
+        path: path.join(__dirname, '/site/dist'),
+    },
+
+    plugins: [
+        new ExtractTextPlugin('[name].css'),
+    ]
 });
