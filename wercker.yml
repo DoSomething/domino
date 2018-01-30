@@ -1,0 +1,15 @@
+box: node:8
+
+# Run tests on all pull requests and branches
+build:
+  steps:
+    - npm-install
+    - script:
+        name: build production assets
+        code: npm run build
+# Automatically deploy `dev` branch to Github pages
+deploy:
+  steps:
+    - lukevivier/gh-pages:
+        token: $GH_TOKEN
+        basedir: build
