@@ -3,5 +3,5 @@ import '../sass/app.scss';
 
 
 (function () {
-    console.log('testinnnnngggg');
+    alert('testinnnnngggg');
 })();
