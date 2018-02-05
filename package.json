@@ -1,24 +1,29 @@
 {
-    "private": true,
-    "scripts": {
-        "start": "npm run clean && npm run modernizr && webpack",
-        "build": "npm run clean && npm run modernizr && NODE_ENV=production webpack",
-        "build:dev": "npm run clean && npm run modernizr && NODE_ENV=development webpack",
-        "clean": "rm -rf ./site/dist",
-        "modernizr": "modernizr -c node_modules/@dosomething/forge/modernizr.json -d site/dist/modernizr.js"
-    },
-    "babel": {
-        "presets": [
-            "@dosomething/babel-config"
-        ]
-    },
-    "dependencies": {
-        "@dosomething/forge": "^6.8.0"
-    },
-    "devDependencies": {
-        "@dosomething/webpack-config": "^3.0.0",
-        "@dosomething/babel-config": "^2.0.0",
-        "modernizr": "^3.3.1",
-        "webpack": "^3.0.0"
-    }
+  "private": true,
+  "scripts": {
+    "start": "npm run clean && npm run modernizr && webpack",
+    "build": "npm run clean && npm run modernizr && NODE_ENV=production webpack",
+    "build:dev": "npm run clean && npm run modernizr && NODE_ENV=development webpack",
+    "clean": "rm -rf ./site/dist",
+    "modernizr": "modernizr -c node_modules/@dosomething/forge/modernizr.json -d site/dist/modernizr.js"
+  },
+  "babel": {
+    "presets": [
+      "@dosomething/babel-config"
+    ]
+  },
+  "dependencies": {
+    "@dosomething/forge": "^6.8.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@dosomething/webpack-config": "^3.0.0",
+    "@dosomething/babel-config": "^2.0.0",
+    "modernizr": "^3.3.1",
+    "webpack": "^3.0.0"
+  },
+  "name": "",
+  "description": "This is **Domino**, the DoSomething.org's frontend leaderboard application.",
+  "version": ""
 }
