@@ -13,7 +13,16 @@
         ]
     },
     "dependencies": {
-        "@dosomething/forge": "^6.8.0"
+        "@dosomething/forge": "^6.8.0",
+        "@dosomething/gateway": "^1.1.5",
+        "babel-polyfill": "^6.26.0",
+        "classnames": "^2.2.5",
+        "dosomething-modal": "^0.3.4",
+        "lodash": "^4.17.4",
+        "prop-types": "^15.6.0",
+        "react": "^15.6.2",
+        "react-dom": "^15.6.2",
+        "sinon": "^4.2.1"
     },
     "devDependencies": {
         "@dosomething/webpack-config": "^3.0.0",
