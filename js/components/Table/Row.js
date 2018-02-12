@@ -10,9 +10,10 @@ class Row extends React.Component {
   }
 
   createRow(data) {
+  	console.log(data);
     const row = [
       {
-        title: data.northstar_id,
+        title: data.user.data.first_name,
       },
       {
         title: data.quantity === null ? 0 : data.quantity,

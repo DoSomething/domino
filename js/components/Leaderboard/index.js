@@ -20,7 +20,8 @@ class Leaderboard extends React.Component {
 			filter: {
 				campaign_id: '1283',
 			},
-			orderBy: 'quantity,desc'
+			orderBy: 'quantity,desc',
+			include: 'user',
 		})
 	      .then((json) => {
 	        this.setState({ jsonReturnedValue: json['data'] });
@@ -31,7 +32,7 @@ class Leaderboard extends React.Component {
 		return (
 			<div className="table-responsive container__block">
 				<h2>LEADERBOARD</h2>
-				<Table className="table" headings={['Name', 'Quantity']} data={this.state.jsonReturnedValue} />
+				<Table className="table" headings={['Name', '# of Empties Collected']} data={this.state.jsonReturnedValue} />
 			</div>
 		);
 	}
