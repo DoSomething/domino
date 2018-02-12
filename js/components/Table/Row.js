@@ -23,7 +23,7 @@ class Row extends React.Component {
   }
 
   render() {
-    const content = this.createEventRow(this.props.data);
+    const content = this.createRow(this.props.data);
 
     return (
       <tr className="table__row">

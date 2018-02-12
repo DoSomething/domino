@@ -10,7 +10,7 @@ class Table extends React.Component {
     const heading = this.props.headings.map((title, index) => <th key={index} className="table__cell"><h3 className="heading -delta">{title}</h3></th>);
 
     const rows = this.props.data.map((content, index) => {
-      return <EventRow key={index} data={content} />;
+      return <Row key={index} data={content} />;
     });
 
     return (
