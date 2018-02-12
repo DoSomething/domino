@@ -16,7 +16,6 @@ export function ready(fn) {
     }
 }
 
-
 // Actually add the component to the page when it is ready.
 ready(() => {
 	ReactDom.render(

@@ -15,7 +15,7 @@ class Row extends React.Component {
         title: data.northstar_id,
       },
       {
-        title: data.quantity,
+        title: data.quantity === null ? 0 : data.quantity,
       },
     ];
 
