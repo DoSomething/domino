@@ -10,7 +10,6 @@ class Row extends React.Component {
   }
 
   createRow(data) {
-  	console.log(data);
     const row = [
       {
         title: data.user.data.first_name,
