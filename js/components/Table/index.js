@@ -1,6 +1,5 @@
 import React from 'react';
 import { map } from 'lodash';
-import PropTypes from 'prop-types';
 
 import Row from './Row';
 import './table.scss';
@@ -27,10 +26,5 @@ class Table extends React.Component {
     );
   }
 }
-
-Table.propTypes = {
-  headings: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
-  data: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
-};
 
 export default Table;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { map } from 'lodash';
-import PropTypes from 'prop-types';
 
 class Row extends React.Component {
   constructor() {
@@ -32,9 +31,5 @@ class Row extends React.Component {
     );
   }
 }
-
-Row.propTypes = {
-  data: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-};
 
 export default Row;
