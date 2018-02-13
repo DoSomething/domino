@@ -18,10 +18,15 @@ class Leaderboard extends React.Component {
 	componentDidMount() {
 		this.api.get('api/v3/signups', {
 			filter: {
-				campaign_id: '1283',
+				// @TODO: update with new campaign_id
+				campaign_id: '7536',
 			},
 			orderBy: 'quantity,desc',
 			include: 'user',
+			// @TODO: remove this limit when we go live since
+			// there will only be 50 users in real competition.
+			// This is just as a placeholder to see data.
+			limit: '50',
 		})
 	      .then((json) => {
 	        this.setState({ jsonReturnedValue: json['data'] });
@@ -39,3 +44,4 @@ class Leaderboard extends React.Component {
 }
 
 export default Leaderboard;
+
