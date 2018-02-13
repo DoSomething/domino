@@ -11,7 +11,7 @@ class Row extends React.Component {
   createRow(data) {
     const row = [
       {
-        title: data.user.data.first_name,
+        title: data.rank.toString().concat('. ', data.user.data.first_name),
       },
       {
         title: data.quantity === null ? 0 : data.quantity,
