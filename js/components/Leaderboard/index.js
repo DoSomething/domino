@@ -12,7 +12,7 @@ class Leaderboard extends React.Component {
 			jsonReturnedValue: []
 		}
 
-		this.api = new RestApiClient('http://rogue.test/');
+		this.api = new RestApiClient('https://rogue.dosomething.org/');
 	}
 
 	componentDidMount() {
