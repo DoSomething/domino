@@ -1,6 +1,6 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
+const configure = require('@dosomething/webpack-config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-var configure = require('@dosomething/webpack-config');
 const path = require('path');
 
 module.exports = configure({
