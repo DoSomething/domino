@@ -17,18 +17,16 @@
     "@dosomething/gateway": "^1.1.5",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "lodash": "^4.17.4",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@dosomething/webpack-config": "^3.0.0",
     "@dosomething/babel-config": "^2.0.0",
     "modernizr": "^3.3.1",
     "webpack": "^3.0.0"
-  },
-  "name": "",
-  "description": "This is **Domino**, the DoSomething.org's frontend leaderboard application.",
-  "version": ""
+  }
 }
