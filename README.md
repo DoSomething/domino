@@ -10,8 +10,8 @@ Clone this repository.
 # Install dependencies:
 $ npm install
 
-# Build the frontend assets:
-$ npm run build
+# Build assets & watch for changes:
+$ npm start
 ```
 
 Once you have followed the steps above, you should be able to develop locally by looking at your `index.html` file in a browser.
