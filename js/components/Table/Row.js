@@ -4,21 +4,6 @@ import { map } from 'lodash';
 class Row extends React.Component {
   constructor() {
     super();
-
-    this.createRow = this.createRow.bind(this);
-  }
-
-  createRow(data) {
-    const row = [
-      {
-        title: data.rank.toString().concat('. ', data.user.data.first_name),
-      },
-      {
-        title: data.quantity === null ? 0 : data.quantity,
-      },
-    ];
-
-    return row;
   }
 
   getImage(data) {
@@ -26,13 +11,14 @@ class Row extends React.Component {
   }
 
   render() {
-    const content = this.createRow(this.props.data);
     const image = this.getImage(this.props.data);
+    const firstName = this.props.data.user.data.first_name;
+    const quantity = this.props.data.quantity;
 
     return (
       <tr className="table__row">
-        <td className="table__cell"><img src={image}/></td>
-        {content.map((cell, index) => <td className="table__cell" key={index}>{cell.title}</td>)}
+        <td className="table__cell"><img src={image}/>{firstName}</td>
+        <td className="table__cell">{quantity || 0}</td>
       </tr>
     );
   }
