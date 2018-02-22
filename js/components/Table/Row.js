@@ -12,12 +12,13 @@ class Row extends React.Component {
 
   render() {
     const image = this.getImage(this.props.data);
+    const rank = this.props.data.rank.toString().concat('.');
     const firstName = this.props.data.user.data.first_name;
     const quantity = this.props.data.quantity;
 
     return (
       <tr className="table__row">
-        <td className="table__cell"><img src={image}/>{firstName}</td>
+        <td className="table__cell">{rank}<img src={image}/>{firstName}</td>
         <td className="table__cell">{quantity || 0}</td>
       </tr>
     );
