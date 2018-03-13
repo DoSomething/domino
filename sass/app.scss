@@ -51,6 +51,19 @@ $tabbed-navigation-zindex: 100;
 $sticky-cta-zindex: 200;
 $notification-zindex: 300;
 
+.nav_items li {
+  max-width: 150px;
+  float: left;
+}
+
+.nav_items img {
+  padding: 25px;
+}
+
+#garnier {
+  max-width: 250px;
+}
+
 .competition_title_block {
   background-color: #222;
   text-align: center;
@@ -64,17 +77,6 @@ $notification-zindex: 300;
 
 .competition_title_block h3 {
   color: white;
-}
-
-.figure__media {
-  width: 25%;
-  padding: 0px;
-  margin: 0px;
-  float: left;
-}
-
-#garnier {
-  width: 40%;
 }
 
 .competition_subtitle h3 {
