@@ -51,13 +51,17 @@ $tabbed-navigation-zindex: 100;
 $sticky-cta-zindex: 200;
 $notification-zindex: 300;
 
+.chrome {
+  background-color: $white;
+}
+
 .nav_items li {
   max-width: 150px;
   float: left;
 }
 
 .nav_items img {
-  padding: 25px;
+  padding: 20px;
 }
 
 #garnier {
@@ -71,17 +75,22 @@ $notification-zindex: 300;
 }
 
 .competition_title_block h1 {
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  font-size: 55px;
   color: white;
   text-transform: uppercase;
 }
 
 .competition_title_block h3 {
+  font-family: $primary-font-family;
   color: white;
 }
 
 .competition_subtitle h3 {
+  font-family: $primary-font-family;
   text-align: center;
-  padding: 0 20% 0 20%;
+  padding: 2% 20% 2% 20%;
 }
 
 .card {
