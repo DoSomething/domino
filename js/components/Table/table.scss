@@ -20,16 +20,21 @@
   width: 33%;
   border: 1px solid $light-gray;
   border-radius: 2px;
+  float: left;
 }
 
 .table__title {
-  background: $primary-color;
+  background-color: $primary-color;
   color: $black;
-  font-weight: $weight-bold;
-  text-align: left;
-  border-collapse: collapse;
-  padding: 25px;
-  font-family: $font-source-sans;
+  padding: $half-spacing;
+
+  h1 {
+    font-weight: $weight-bold;
+    text-align: left;
+    font-family: $primary-font-family;
+    font-size: $font-regular;
+    text-transform: uppercase;
+  }
 
   @include media($small) {
     white-space: nowrap;

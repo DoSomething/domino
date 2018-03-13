@@ -46,9 +46,9 @@ class Table extends React.Component {
       <table className="table">
         <thead>
           <tr className="table__title">
-             <th className="table__cell"><h3 className="heading -delta">LEADERBOARD</h3></th>
-             <th className="table__cell"><h3 className="heading -delta"> </h3></th>
-             <th className="table__cell"><h3 className="heading -delta"> </h3></th>
+             <th className="table__cell"><h1 className="heading -delta">Leaderboard</h1></th>
+             <th className="table__cell"><h1 className="heading -delta"> </h1></th>
+             <th className="table__cell"><h1 className="heading -delta"> </h1></th>
           </tr>
           <tr className="table__header">
             {heading}

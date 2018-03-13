@@ -53,9 +53,17 @@ $notification-zindex: 300;
 
 .competition_title_block {
   background-color: #222;
-  color: $white;
   text-align: center;
   padding: 2% 0 2% 0;
+}
+
+.competition_title_block h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.competition_title_block h3 {
+  color: white;
 }
 
 .figure__media {
@@ -67,4 +75,40 @@ $notification-zindex: 300;
 
 #garnier {
   width: 40%;
+}
+
+.competition_subtitle h3 {
+  text-align: center;
+  padding: 0 20% 0 20%;
+}
+
+.card {
+  background-color: $white;
+  overflow: hidden;
+  width: 33%;
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  float: left;
+}
+
+.card__title {
+  color: $black;
+  background-color: $primary-color;
+  padding: $half-spacing;
+
+  h1 {
+    font-family: $primary-font-family;
+    font-size: $font-regular;
+    text-transform: uppercase;
+    display: inline;
+  }
+
+  // a {
+  //   color: $black;
+
+  //   &:hover {
+  //     color: rgba($black, 0.75);  // @TODO should be a variable
+  //     text-decoration: none;
+  //   }
+  // }
 }
