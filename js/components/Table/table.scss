@@ -6,35 +6,25 @@
 
 
 .table-responsive {
-  width: 33%;
+  width: 100%;
   overflow-x: auto;
-
-  h2 {
-    color: $black;
-    padding: $base-spacing/2 0px;
-  }
 }
 
 .table {
   display: table;
-  width: 33%;
+  width: 100%;
   border: 1px solid $light-gray;
   border-radius: 2px;
-  float: left;
 }
 
 .table__title {
   background-color: $primary-color;
   color: $black;
   padding: $half-spacing;
-
-  h1 {
-    font-weight: $weight-bold;
-    text-align: left;
-    font-family: $primary-font-family;
-    font-size: $font-regular;
-    text-transform: uppercase;
-  }
+  text-align: left;
+  font-family: $primary-font-family;
+  font-size: $font-regular;
+  text-transform: uppercase;
 
   @include media($small) {
     white-space: nowrap;
@@ -63,7 +53,7 @@
   padding: 6px 12px;
   display: table-cell;
   border-collapse: collapse;
-
+  text-align: left;
 
   @include media($small) {
     white-space: nowrap;
