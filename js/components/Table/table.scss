@@ -2,30 +2,43 @@
  * Table
  */
 @import '~@dosomething/forge/scss/toolkit';
+@import './sass/app';
+
 
 .table-responsive {
   width: 100%;
   overflow-x: auto;
-
-  h2 {
-    color: $black;
-    padding: $base-spacing/2 0px;
-  }
 }
 
 .table {
   display: table;
   width: 100%;
-  border: 1px solid $med-gray;
+  border: 1px solid $light-gray;
   border-radius: 2px;
+}
+
+.table__title {
+  background-color: $primary-color;
+  color: $black;
+  padding: $half-spacing;
+  text-align: left;
+  font-family: $primary-font-family;
+  font-size: $font-regular;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @include media($small) {
+    white-space: nowrap;
+  }
 }
 
 .table__header {
   background: white;
   color: $black;
-  border: 1px solid $med-gray;
   font-weight: $weight-bold;
   text-align: left;
+  border-collapse: collapse;
+  font-family: $primary-font-family;
 
   @include media($small) {
     white-space: nowrap;
@@ -35,19 +48,22 @@
 .table__row {
   display: table-row;
   background: $light-gray;
-  border: 1px solid $med-gray;
+  border-collapse: collapse;
+  font-family: $primary-font-family;
 }
 
 .table__cell {
   padding: 6px 12px;
   display: table-cell;
-  border: 1px solid $med-gray;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: $primary-font-family;
 
   @include media($small) {
     white-space: nowrap;
   }
 }
 
-.table__row:nth-child(odd){
+.table__row:nth-child(even){
   background: white;
 }

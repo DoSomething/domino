@@ -27,7 +27,8 @@ class Row extends React.Component {
 
     return (
       <tr className="table__row">
-        <td className="table__cell">{rank}<img src={image}/>{firstName} {collegeName}</td>
+        <td className="table__cell">{rank}</td>
+        <td className="table__cell"><img src={image}/>{firstName}</td>
         <td className="table__cell">{quantity || 0}</td>
       </tr>
     );

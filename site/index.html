@@ -3,66 +3,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Domino</title>
+  <title>Domino</title>
 
-    <link rel="stylesheet" href="dist/app.css">
-    <script src="dist/modernizr.js"></script>
+  <link rel="stylesheet" href="dist/app.css">
+  <script src="dist/modernizr.js"></script>
 </head>
 
 <body>
-    <div class="chrome">
-        <div class="wrapper">
-            <nav class="navigation">
-                <ul class="gallery -triad">
-                    <li>
-                        <div class="figure">
-                            <div class="figure__media">
-                                <img alt="Terracycle logo" src="images/terracycle.png" />
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="figure">
-                            <div class="figure__media">
-                                <img alt="Garnier logo" src="images/garnier.png" />
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="figure">
-                            <div class="figure__media">
-                                <img alt="DoSomething.org logo" src="images/ds.png" />
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+  <div class="chrome">
+    <div class="wrapper">
+      <nav class="navigation">
+        <ul class="nav_items">
+          <li>
+            <img alt="Terracycle logo" src="images/terracycle.png" />
+          </li>
+          <li id="garnier">
+            <img alt="Garnier logo" src="images/garnier.png" />
+          </li>
+          <li>
+            <img alt="DoSomething.org logo" src="images/ds.png" />
+          </li>
+        </ul>
+      </div>
 
-                <h1>Rinse, Recycle, Repeat College Competition</h1>
+      <div class="competition_title_block">
+        <h1>Rinse, Recycle, Repeat College Competition</h1>
+        <h3>Leaderboard updates every Monday!</h3>
+        <h3>Final Deadline: <b>April 20th, 2018</b> 11:59 p.m. EST</h3>
+      </div>
 
-                <h1>COMPETITION DEADLINE: 02/25/18</h1>
+      <div class="competition_subtitle">
+        <h3>Let’s Do This! Check back every Monday to see where you stack up! Head <a href="https://www.dosomething.org/us/campaigns/rinse-recycle-repeat-college-competition" target="_blank">here</a> to add to your impact and climb the leaderboard!</h3>
+      </div>
 
-                <div id="leaderboard"></div>
-                <img alt="tongue-cat" src="images/tongue-cat.jpg" />
+      <ul class="gallery -duo">
+        <li>
+          <div class="figure__media">
+            <div id="leaderboard"></div>
+          </div>
+        </li>
 
-                <div>
-                    <h1>FAQs</h1>
-                    <ul>
-                        <li><b>Here is a question</b></li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Eget sit amet tellus cras. Malesuada bibendum arcu vitae elementum curabitur vitae. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Tincidunt ornare massa eget egestas purus. Ut lectus arcu bibendum at varius vel pharetra. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. In nibh mauris cursus mattis. Massa enim nec dui nunc mattis enim.</li>
-                        <li><b>Here is another question</b></li>
-                        <li>Pulvinar neque laoreet suspendisse interdum consectetur libero id. Mus mauris vitae ultricies leo integer. Feugiat in ante metus dictum at tempor commodo ullamcorper. Eu ultrices vitae auctor eu augue ut lectus. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Tellus elementum sagittis vitae et leo duis ut. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Mauris ultrices eros in cursus turpis massa. Massa tincidunt dui ut ornare lectus. Bibendum est ultricies integer quis auctor elit sed vulputate. Commodo odio aenean sed adipiscing diam donec adipiscing. Tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas ultricies mi eget. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse.</li>
-                        <li><b>Here is a third question</b></li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Eget sit amet tellus cras. Malesuada bibendum arcu vitae elementum curabitur vitae. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Tincidunt ornare massa eget egestas purus. Ut lectus arcu bibendum at varius vel pharetra. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. In nibh mauris cursus mattis. Massa enim nec dui nunc mattis enim.</li>
-                    </ul>
-                </div>
+        <li>
+          <div class="figure__media">
+            <div class="card">
+              <header class="card__title">
+                  <h1>FAQ</h1>
+              </header>
+              <h4><b>When does the leaderboard update?</b></h4>
+              <p>Every Monday afernoon! Which means if you want your numbers to be counted every week you need to submit your weekly update <a href="https://www.dosomething.org/us/campaigns/rinse-recycle-repeat-college-competition" target="_blank">here</a> by Sunday night.</p>
+
+              <h4><b>Where can I go to add to my impact?</b></h4>
+              <p>Head over to the <a href="https://www.dosomething.org/us/campaigns/rinse-recycle-repeat-college-competition" target="_blank">campaign page</a> for that! You’ll need a photo of your haul and the number of beauty and personal care products you’ve collected.</p>
+
+              <h4><b>Who do I talk to if I think the leaderboard isn’t right?</b></h4>
+              <p>Send an email to <a href="mailto:adam@dosomething.org">adam@dosomething.org</a>. He’ll help you out!</p>
             </div>
-        </div>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <script src="dist/app.js"></script>
+  <script src="dist/app.js"></script>
 </body>
 
 </html>

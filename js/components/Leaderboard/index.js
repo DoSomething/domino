@@ -36,8 +36,7 @@ class Leaderboard extends React.Component {
 	render() {
 		return (
 			<div className="table-responsive container__block">
-				<h2>LEADERBOARD</h2>
-				<Table className="table" headings={['Name', '# of Empties Collected']} data={this.state.jsonReturnedValue} />
+				<Table className="table" headings={['Rank', 'Name', '# of Empties']} data={this.state.jsonReturnedValue} />
 			</div>
 		);
 	}
