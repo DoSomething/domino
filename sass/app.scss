@@ -53,7 +53,12 @@ $notification-zindex: 300;
 
 .chrome {
   background-color: $white;
+
+  .wrapper {
+    box-shadow: none;
+  }
 }
+
 
 .nav_items li {
   max-width: 150px;
