@@ -25,6 +25,7 @@
   font-family: $primary-font-family;
   font-size: $font-regular;
   text-transform: uppercase;
+  font-weight: bold;
 
   @include media($small) {
     white-space: nowrap;
@@ -37,6 +38,7 @@
   font-weight: $weight-bold;
   text-align: left;
   border-collapse: collapse;
+  font-family: $primary-font-family;
 
   @include media($small) {
     white-space: nowrap;
@@ -47,6 +49,7 @@
   display: table-row;
   background: $light-gray;
   border-collapse: collapse;
+  font-family: $primary-font-family;
 }
 
 .table__cell {
@@ -54,6 +57,7 @@
   display: table-cell;
   border-collapse: collapse;
   text-align: left;
+  font-family: $primary-font-family;
 
   @include media($small) {
     white-space: nowrap;
