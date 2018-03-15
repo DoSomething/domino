@@ -2,6 +2,7 @@ $forge-path: "~@dosomething/forge/assets/";
 
 // Import Forge.
 @import "~@dosomething/forge/scss/forge";
+@import "fonts";
 @import "toolbox";
 
 .chrome {
@@ -54,10 +55,18 @@ $forge-path: "~@dosomething/forge/assets/";
   font-size: 22px;
 }
 
-.competition_subtitle p {
-  font-family: $primary-font-family;
-  text-align: center;
-  padding: 2%;
+.competition_subtitle {
+  p {
+    font-family: $primary-font-family;
+    text-align: center;
+    padding: 2%;
+    font-weight: normal;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: normal;
+  }
 }
 
 .gallery.-duo {
@@ -101,5 +110,14 @@ $forge-path: "~@dosomething/forge/assets/";
 
   .card__content {
     margin: 2%;
+
+    h4 {
+      font-weight: $weight-bold;
+    }
+
+    a {
+      text-decoration: underline;
+      font-weight: normal;
+    }
   }
 }
