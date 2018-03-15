@@ -42,7 +42,7 @@ $forge-path: "~@dosomething/forge/assets/";
 .competition_title_block h1 {
   font-family: $secondary-font-family;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 75px;
   color: white;
   text-transform: uppercase;
 }
@@ -50,12 +50,14 @@ $forge-path: "~@dosomething/forge/assets/";
 .competition_title_block h3 {
   font-family: $primary-font-family;
   color: white;
+  font-weight: 100;
+  font-size: 22px;
 }
 
-.competition_subtitle h3 {
+.competition_subtitle p {
   font-family: $primary-font-family;
   text-align: center;
-  padding: 2% 20% 2% 20%;
+  padding: 2%;
 }
 
 .gallery.-duo {
@@ -72,7 +74,7 @@ $forge-path: "~@dosomething/forge/assets/";
   border: 1px solid $light-gray;
   border-radius: 2px;
   text-align: left;
-  // font-family: $primary-font-family;
+  font-family: $primary-font-family;
 
   h4 {
     padding: $half-spacing $half-spacing 0 $half-spacing;
@@ -80,7 +82,6 @@ $forge-path: "~@dosomething/forge/assets/";
   }
 
   p {
-    // font-family: $primary-font-family;
     padding: 0 $half-spacing 0 $half-spacing;
   }
 
@@ -97,5 +98,8 @@ $forge-path: "~@dosomething/forge/assets/";
       color: $black;
     }
   }
-}
 
+  .card__content {
+    margin: 2%;
+  }
+}
