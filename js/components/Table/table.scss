@@ -2,8 +2,7 @@
  * Table
  */
 @import '~@dosomething/forge/scss/toolkit';
-@import './sass/app';
-
+@import '../../../sass/toolbox.scss';
 
 .table-responsive {
   width: 100%;
@@ -25,7 +24,7 @@
   font-family: $primary-font-family;
   font-size: $font-regular;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: $weight-bold;
 
   @include media($small) {
     white-space: nowrap;
@@ -57,7 +56,12 @@
   display: table-cell;
   border-collapse: collapse;
   text-align: left;
+  font-weight: $weight-bold;
   font-family: $primary-font-family;
+
+  .heading.-delta {
+    font-weight: $weight-bold;
+  }
 
   @include media($small) {
     white-space: nowrap;

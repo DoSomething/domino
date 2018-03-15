@@ -1,0 +1,49 @@
+// @import "fonts";
+
+// This is a set of variables pulled from Phoenix Next.
+// These values will be in Flux as creative plays with it,
+// but this can be moved to Forge when we're confident with
+// the variables.
+
+// overridden colors
+$black: $off-black;
+$light-gray: #DCDCDC;
+
+// semantic colors
+$primary-color: #F9DD27;
+$success-color: #008000;
+$sponsor-accent: #8963CA;
+
+$primary-text-color: $off-black;
+$secondary-text-color: #A3A3A3;
+
+$primary-border-color: $light-gray;
+
+$light-background-color: #F6F6F6;
+$light-background-contrast-color: $off-black;
+$dark-background-color: $off-black;
+$dark-background-color-transparent: rgba(34, 34, 34, 0.9);
+$dark-background-contrast-color: $white;
+
+// spacing
+$half-spacing: $base-spacing / 2;
+
+// Font Stacks
+$font-source-sans: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-league-gothic: "League Gothic", "Impact", "Franklin Gothic Bold", "Arial Black", sans-serif;
+$gothic-letter-spacing: 4px;
+
+$primary-font-family: $font-source-sans;
+$secondary-font-family: $font-league-gothic;
+
+%block {
+  background-color: $white;
+  border: 1px solid $primary-border-color;
+  border-radius: $lg-border-radius;
+  padding: $base-spacing / 2;
+}
+
+// Z-Indexes used
+$tabbed-navigation-zindex: 100;
+$sticky-cta-zindex: 200;
+$notification-zindex: 300;

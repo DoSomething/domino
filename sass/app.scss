@@ -2,54 +2,8 @@ $forge-path: "~@dosomething/forge/assets/";
 
 // Import Forge.
 @import "~@dosomething/forge/scss/forge";
-
-// This is a set of variables specific to Phoenix Next.
-// These values will be in Flux as creative plays with it,
-// but this can be moved to Forge when we're confident with
-// the variables.
-
-// overridden colors
-$black: $off-black;
-$light-gray: #DCDCDC;
-
-// semantic colors
-$primary-color: #F9DD27;
-$success-color: #008000;
-$sponsor-accent: #8963CA;
-
-$primary-text-color: $off-black;
-$secondary-text-color: #A3A3A3;
-
-$primary-border-color: $light-gray;
-
-$light-background-color: #F6F6F6;
-$light-background-contrast-color: $off-black;
-$dark-background-color: $off-black;
-$dark-background-color-transparent: rgba(34, 34, 34, 0.9);
-$dark-background-contrast-color: $white;
-
-// spacing
-$half-spacing: $base-spacing / 2;
-
-// Font Stacks
-$font-source-sans: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$font-league-gothic: "League Gothic", "Impact", "Franklin Gothic Bold", "Arial Black", sans-serif;
-$gothic-letter-spacing: 4px;
-
-$primary-font-family: $font-source-sans;
-$secondary-font-family: $font-league-gothic;
-
-%block {
-  background-color: $white;
-  border: 1px solid $primary-border-color;
-  border-radius: $lg-border-radius;
-  padding: $base-spacing / 2;
-}
-
-// Z-Indexes used
-$tabbed-navigation-zindex: 100;
-$sticky-cta-zindex: 200;
-$notification-zindex: 300;
+@import "fonts";
+@import "toolbox";
 
 .chrome {
   background-color: $white;
@@ -89,7 +43,7 @@ $notification-zindex: 300;
 .competition_title_block h1 {
   font-family: $secondary-font-family;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 75px;
   color: white;
   text-transform: uppercase;
 }
@@ -97,12 +51,22 @@ $notification-zindex: 300;
 .competition_title_block h3 {
   font-family: $primary-font-family;
   color: white;
+  font-weight: 100;
+  font-size: 22px;
 }
 
-.competition_subtitle h3 {
-  font-family: $primary-font-family;
-  text-align: center;
-  padding: 2% 20% 2% 20%;
+.competition_subtitle {
+  p {
+    font-family: $primary-font-family;
+    text-align: center;
+    padding: 2%;
+    font-weight: normal;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: normal;
+  }
 }
 
 .gallery.-duo {
@@ -118,31 +82,42 @@ $notification-zindex: 300;
   overflow: hidden;
   border: 1px solid $light-gray;
   border-radius: 2px;
-}
-
-.card h4 {
+  text-align: left;
   font-family: $primary-font-family;
-  text-align: left;
-  padding: $half-spacing $half-spacing 0 $half-spacing;
-  margin: 0;
-}
 
-.card p {
-  font-family: $primary-font-family;
-  text-align: left;
-  padding: 0 $half-spacing 0 $half-spacing;
-}
+  h4 {
+    padding: $half-spacing $half-spacing 0 $half-spacing;
+    margin: 0;
+  }
 
-.card__title {
-  background-color: $primary-color;
-  padding: $half-spacing;
-  text-align: left;
+  p {
+    padding: 0 $half-spacing 0 $half-spacing;
+  }
 
-  h1 {
-    font-family: $primary-font-family;
-    font-size: $font-regular;
-    text-transform: uppercase;
-    display: inline;
-    color: $black;
+  .card__title {
+    background-color: $primary-color;
+    padding: $half-spacing;
+    text-align: left;
+
+    h1 {
+      font-family: $primary-font-family;
+      font-size: $font-regular;
+      text-transform: uppercase;
+      display: inline;
+      color: $black;
+    }
+  }
+
+  .card__content {
+    margin: 2%;
+
+    h4 {
+      font-weight: $weight-bold;
+    }
+
+    a {
+      text-decoration: underline;
+      font-weight: normal;
+    }
   }
 }
