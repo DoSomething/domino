@@ -1,7 +1,7 @@
 // League Gothic
 @font-face {
   font-family: 'League Gothic';
-  src: url('./site/fonts/leaguegothic-regular.woff') format('woff');
+  src: url('../site/fonts/leaguegothic-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -9,24 +9,24 @@
 // Source Sans Pro
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('./site/fonts/sourcesanspro-regular.woff') format('woff2'),
-       url('./site/fonts/sourcesanspro-regular.woff') format('woff');
+  src: url('../site/fonts/sourcesanspro-regular.woff') format('woff2'),
+       url('../site/fonts/sourcesanspro-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('./fonts/sourcesanspro-bold.woff') format('woff2'),
-       url('./fonts/sourcesanspro-bold.woff') format('woff');
+  src: url('../site/fonts/sourcesanspro-bold.woff') format('woff2'),
+       url('../site/fonts/sourcesanspro-bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('./fonts/sourcesanspro-italic.woff') format('woff2'),
-       url('./fonts/sourcesanspro-italic.woff') format('woff');
+  src: url('../site/fonts/sourcesanspro-italic.woff') format('woff2'),
+       url('../site/fonts/sourcesanspro-italic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
 }
