@@ -23,7 +23,7 @@ class Row extends React.Component {
     const rank = this.props.data.rank.toString().concat('.');
     const firstName = this.props.data.user.data.first_name;
     const collegeName = this.getCollegeName(this.props.data.northstar_id);
-    const quantity = this.props.data.quantity;
+    const quantity = this.props.data.accepted_quantity.data.quantity;
 
     return (
       <tr className="table__row">

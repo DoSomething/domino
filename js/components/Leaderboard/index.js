@@ -22,7 +22,7 @@ class Leaderboard extends React.Component {
 				campaign_id: '7536',
 			},
 			orderBy: 'quantity,desc',
-			include: 'user',
+			include: 'accepted_quantity,user',
 			// @TODO: remove this limit when we go live since
 			// there will only be 50 users in real competition.
 			// This is just as a placeholder to see data.
