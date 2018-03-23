@@ -9,7 +9,8 @@ class Leaderboard extends React.Component {
 		super();
 
 		this.state = {
-			jsonReturnedValue: []
+			jsonReturnedValue: [],
+      loading: true,
 		}
 
 		this.api = new RestApiClient('https://rogue.dosomething.org/');
@@ -29,14 +30,14 @@ class Leaderboard extends React.Component {
 			limit: '50',
 		})
 	      .then((json) => {
-	        this.setState({ jsonReturnedValue: json['data'] });
+	        this.setState({ jsonReturnedValue: json['data'], loading: false });
 	    });
 	}
 
 	render() {
 		return (
 			<div className="table-responsive container__block">
-				<Table className="table" headings={['Rank', 'Name', '# of Empties']} data={this.state.jsonReturnedValue} />
+				<Table className="table" headings={['Rank', 'Name', '# of Empties']} data={this.state.jsonReturnedValue} loading={this.state.loading} />
 			</div>
 		);
 	}

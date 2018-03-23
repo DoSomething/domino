@@ -38,6 +38,19 @@ class Table extends React.Component {
     const heading = this.props.headings.map((title, index) => <th key={index} className="table__cell"><h3 className="heading -delta">{title}</h3></th>);
     const users = this.addRepeatedStandingsRankToUsers(this.props.data);
 
+    if(this.props.loading) {
+      return (
+        <table className="table">
+          <thead>
+            <th colspan="3" className="table__title">Leaderboard</th>
+            <tr className="table__header">
+                <div className="spinner" />
+            </tr>
+          </thead>
+        </table>
+      );
+    }
+
     const rows = users.map((content, index) => {
       return <Row key={index} data={content} />;
     });
