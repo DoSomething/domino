@@ -34,6 +34,27 @@ $forge-path: "~@dosomething/forge/assets/";
   }
 }
 
+.leaderboard {
+  /*The include media statements just wrap these styles in media queries.
+  For anything less than medium these should probably just stack*/
+  @include media($medium) {
+    float: left;
+    width: 50%;
+  }
+}
+
+.sidebar {
+  @include media($medium) {
+    /*Forgot that when using sticky, we can still float. Typically specifying positioning
+    like absolute, you should not also use float, since it ignores floats, but not in the case
+    of position sticky!*/
+    float: right;
+    position: sticky;
+    top: 24px;
+    width: 50%;
+  }
+}
+
 .competition_title_block {
   background-color: #222;
   text-align: center;
