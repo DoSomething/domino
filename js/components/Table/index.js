@@ -58,7 +58,7 @@ class Table extends React.Component {
     return (
       <table className="table">
         <thead>
-          <th colspan="3" className="table__title">Leaderboard</th>
+          <th colspan="4" className="table__title">Leaderboard</th>
           <tr className="table__header">
             {heading}
           </tr>

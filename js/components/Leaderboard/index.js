@@ -19,9 +19,11 @@ class Leaderboard extends React.Component {
 	componentDidMount() {
 		this.api.get('api/v3/signups', {
 			filter: {
-				// @TODO: update with new campaign_id
 				campaign_id: '7536',
 			},
+      filter: {
+        campaign_run_id: '8066',
+      },
 			orderBy: 'quantity,desc',
 			include: 'user',
 			// @TODO: remove this limit when we go live since
@@ -37,7 +39,7 @@ class Leaderboard extends React.Component {
 	render() {
 		return (
 			<div className="table-responsive">
-				<Table className="table" headings={['Rank', 'Name', '# of Empties']} data={this.state.jsonReturnedValue} loading={this.state.loading} />
+				<Table className="table" headings={['Rank', '', 'Name', '# of Empties']} data={this.state.jsonReturnedValue} loading={this.state.loading} />
 			</div>
 		);
 	}

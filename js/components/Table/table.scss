@@ -66,8 +66,21 @@
   @include media($small) {
     white-space: nowrap;
   }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .table__row:nth-child(even){
   background: white;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+.college {
+  font-weight: normal;
 }
