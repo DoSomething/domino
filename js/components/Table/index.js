@@ -9,6 +9,13 @@ class Table extends React.Component {
     super();
 
     this.addRepeatedStandingsRankToUsers = this.addRepeatedStandingsRankToUsers.bind(this);
+    this.sortByAcceptedQuantity = this.sortByAcceptedQuantity.bind(this);
+  }
+
+  sortByAcceptedQuantity(data) {
+    const sortedData = data.sort((a,b) => b.accepted_quantity.data.quantity - a.accepted_quantity.data.quantity);
+
+    return sortedData;
   }
 
   addRepeatedStandingsRankToUsers(data) {
@@ -19,7 +26,7 @@ class Table extends React.Component {
       // Don't perform this logic on the first element
       if (index > 0) {
         // Apply "repeated standings" rank and reset it back to 1.
-        if (element['quantity'] === data[index - 1]['quantity']) {
+        if (element['accepted_quantity']['data']['quantity'] === data[index - 1]['accepted_quantity']['data']['quantity']) {
           rank = data[index - 1]['rank']
         } else {
           rank += increment;
@@ -36,7 +43,8 @@ class Table extends React.Component {
 
   render() {
     const heading = this.props.headings.map((title, index) => <th key={index} className="table__cell"><h3 className="heading -delta">{title}</h3></th>);
-    const users = this.addRepeatedStandingsRankToUsers(this.props.data);
+    const sortedData = this.sortByAcceptedQuantity(this.props.data);
+    const users = this.addRepeatedStandingsRankToUsers(sortedData);
 
     if(this.props.loading) {
       return (
