@@ -26,9 +26,7 @@ class Leaderboard extends React.Component {
       },
 			orderBy: 'quantity,desc',
 			include: 'accepted_quantity,user',
-			// @TODO: remove this limit when we go live since
-			// there will only be 50 users in real competition.
-			// This is just as a placeholder to see data.
+      // 50 users in the competition
 			limit: '50',
 		})
 	      .then((json) => {
