@@ -14,7 +14,7 @@ $ npm install
 $ npm start
 ```
 
-Once you have followed the steps above, you should be able to develop locally by looking at your `index.html` file in a browser.
+Once you have followed the steps above, you should be able to develop locally using the [NPM serve](https://www.npmjs.com/package/serve) package.
 
 In order to contribue changes:
 * Create a new branch off of `master`
