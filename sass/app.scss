@@ -142,3 +142,9 @@ $forge-path: "~@dosomething/forge/assets/";
     }
   }
 }
+
+.table__cell {
+  img {
+    max-width: unset;
+  }
+}
