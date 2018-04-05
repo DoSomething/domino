@@ -53,7 +53,7 @@ class Row extends React.Component {
       '58925983a0bfad05c6773403': 'University of South Carloina',
       '55c26268469c64a31f965599': 'Florida International University',
       '58c570a3a0bfad205905180c': 'Albright College',
-      '5966bf21a0bfad5d167ff4c5': 'Indiana University – Purdue University Indianapolis',
+      '5966bf21a0bfad5d167ff4c5': 'Indiana University',
       '593f2ad5a0bfad1b361565d1': 'Marshall University',
       '57bbb0fd42a0648f028b456a': 'Ivy Tech Community College',
       '56bc2c07469c6463248b4615': 'University of South Alabama',
