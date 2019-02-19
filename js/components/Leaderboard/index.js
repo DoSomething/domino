@@ -13,7 +13,7 @@ class Leaderboard extends React.Component {
       loading: true,
 		}
 
-		this.api = new RestApiClient('https://rogue.dosomething.org/');
+		this.api = new RestApiClient('https://activity.dosomething.org/');
 	}
 
 	componentDidMount() {
