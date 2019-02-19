@@ -21,9 +21,6 @@ class Leaderboard extends React.Component {
 			filter: {
 				campaign_id: '7536',
 			},
-      filter: {
-        campaign_run_id: '8066',
-      },
 			orderBy: 'quantity,desc',
 			include: 'accepted_quantity,user',
       // 50 users in the competition
